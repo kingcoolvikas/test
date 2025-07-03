@@ -1,4 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" onload="
-  let node=document.createElementNS('http://www.w3.org/2000/svg','circle');
-  while(1)document.body.appendChild(node.cloneNode(true));
-"></svg>
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <g id="loop">
+      <use href="#loop" />
+    </g>
+  </defs>
+  <use href="#loop" />
+</svg>
