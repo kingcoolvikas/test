@@ -1,11 +1,10 @@
-<?xml version="1.0"?>
-<!DOCTYPE svg [
-  <!ENTITY a "aaaaaaaa">
-  <!ENTITY b "&a;&a;&a;&a;&a;&a;&a;&a;">
-  <!ENTITY c "&b;&b;&b;&b;&b;&b;&b;&b;">
-  <!ENTITY d "&c;&c;&c;&c;&c;&c;&c;&c;">
-  <!ENTITY e "&d;&d;&d;&d;&d;&d;&d;&d;">
-]>
 <svg xmlns="http://www.w3.org/2000/svg">
-  <text y="20">&e;</text>
+  <defs>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="9999999" />
+      <feGaussianBlur stdDeviation="9999999" />
+      <feGaussianBlur stdDeviation="9999999" />
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" filter="url(#blur)" />
 </svg>
